@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/carousel.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static/img/z01icon.png">
+    <script src="./static/js/init.js" type="module" defer></script>
+    <title>Z01_Profile_Viewer</title>
+</head>
+<body>
+    <!-- <div class="loader"></div> -->
+    <main id="login" style="visibility: hidden;">
+        <form id="login-form">
+            <img src="./static/img/z01icon.png" alt="">
+            <label for="username-email">Username/Email:</label>
+            <input type="text" id="username-email" name="username-email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <span id="login-err"></span>
+            <input type="submit" value="Log in">
+        </form>
+    </main>
+    <main id="profil" style="visibility: hidden;">
+        <header>
+            <img src="./static/img/z01icon.png" alt="">
+            <h2 id="title">ZONE 01 Profile Viewer</h2>
+            <button id="logout">Logout</button>
+        </header>
+        <div id="panel">
+            <div id="lvl">
+                <img src="" alt="" id="pp">
+                <div id="datalvl">
+                    <div class="prenom"><span>FirstName: </span><span id="prenom" class="num"></span></div>
+                    <div class="nom"><span>LastName: </span><span id="nom" class="num"></span></div>
+                    <div class="lvls"><span>LVL: </span><span id="lvls" class="num"></span></div>
+                    <div class="xps"><span>XP: </span><span id="xps" class="num"></span></div>
+                </div>
+            </div>
+            <div id="ratiograph">
+                    
+            </div>
+            <div id="projectgraph">
+                
+            </div>
+            <div id="skillsgraph">
+                    
+            </div>
+        </div>
+    </main>
+</body>
+</html>
